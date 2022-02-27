@@ -47,7 +47,7 @@ body{
    font-family: 'Permanent Marker', cursive;
    
 }
-@media (max-width: 320px){
+@media (max-width: 620px){
    .header1 h1
    {
       font-size: 40px;
@@ -82,7 +82,7 @@ body{
    /* border: 2px solid red; */
    
 }
-@media (max-width: 320px){
+@media (max-width: 620px){
    .header2 span
    {
       font-size: 15px;
@@ -226,7 +226,7 @@ justify-content: center;
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
-@media (max-width: 320px){
+@media (max-width: 620px){
    #reset-btn
    {
       height: 23px;
@@ -235,7 +235,7 @@ justify-content: center;
   padding-right: 10px;
    }
 }
-@media (max-width: 320px){
+@media (max-width: 620px){
    #tile0,#tile1,#tile2,#tile3,#tile4,#tile5,#tile6,#tile7,#tile8
    {
       height: 60px;
