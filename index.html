@@ -5,44 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
- <link rel="stylesheet"  media="screen and (max-width:800px)" href="mobile.css" >
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="mobile.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
     <script src="log.js">
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Tic-Tac-Toe</title>
 </head>
-<body>   
+
+<body>
     <div class="bg"></div>
-<div class="bg bg2"></div>
-<div class="bg bg3"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
     <div class="container">
-        
+
         <div class="header1">
-            <h1   >TIC-TAC-TOE</h1>
+            <h1>TIC-TAC-TOE</h1>
         </div>
-            <div  class="header2"><span id="playerX">X : -</span><span  id="playerO">O : -</span></div>
-    <div id="game">
-        <div id="grid">
-    <div id="tile0"  onclick="draw('tile0')"></div>
-    <div id="tile1" onclick="draw('tile1')"></div>
-    <div id="tile2" onclick="draw('tile2')"></div>
-    <div id="tile3" onclick="draw('tile3')" ></div>
-    <div id="tile4" onclick="draw('tile4')"></div>
-    <div id="tile5" onclick="draw('tile5')"></div>
-    <div id="tile6" onclick="draw('tile6')"></div>
-    <div id="tile7" onclick="draw('tile7')"></div>
-    <div id="tile8" onclick="draw('tile8')"></div>
+        <div class="header2"><span id="playerX">X : -</span><span id="playerO">O : -</span></div>
+        <div id="game">
+            <div id="grid">
+                <div id="tile0" onclick="draw('tile0')"></div>
+                <div id="tile1" onclick="draw('tile1')"></div>
+                <div id="tile2" onclick="draw('tile2')"></div>
+                <div id="tile3" onclick="draw('tile3')"></div>
+                <div id="tile4" onclick="draw('tile4')"></div>
+                <div id="tile5" onclick="draw('tile5')"></div>
+                <div id="tile6" onclick="draw('tile6')"></div>
+                <div id="tile7" onclick="draw('tile7')"></div>
+                <div id="tile8" onclick="draw('tile8')"></div>
+            </div>
+        </div>
+        <div id="reset">
+            <button id="reset-btn" onclick="reset()">Restart game</button>
+        </div>
+
     </div>
-</div>
-<div  id="reset">
-    <button id="reset-btn" onclick="reset()" >Restart game</button></div> 
-  
-</div>
 </body>
+
 </html>

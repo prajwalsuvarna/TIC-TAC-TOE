@@ -37,7 +37,7 @@ body{
 .header1 h1
 { 
    
-   font-size: 70px;
+   font-size: 100px;
    padding:20px;
    display: flex;
    margin:auto;
@@ -46,12 +46,6 @@ body{
    /* border: 2px solid red; */
    font-family: 'Permanent Marker', cursive;
    
-}
-@media (max-width: 320px){
-   .header1 h1
-   {
-      font-size: 40px;
-   }
 }
 .header2
 {
@@ -79,17 +73,9 @@ body{
    justify-content: center;
    align-items: center;
    font-family: "Montserrat";
+   cursor:pointer;
    /* border: 2px solid red; */
    
-}
-@media (max-width: 320px){
-   .header2 span
-   {
-      font-size: 15px;
-      padding:5px 15px;
-      margin-left:15px;
-      margin-right:15px;
-   }
 }
 #game
 {
@@ -97,7 +83,7 @@ body{
    align-items: center;
    justify-content: center;
    margin: auto;
-   height:55vh;
+   height: 50%;
    /* border:2px solid blue; */
    flex-direction: column;
    font-family: "Montserrat";
@@ -108,7 +94,7 @@ body{
 {
    margin: auto;
    height: 125px;
-   width:125px;
+   width: 125px;
    display: flex;         
   
    justify-content: center;
@@ -129,7 +115,7 @@ body{
 #tile3,#tile5
 {
    height: 125px;
-   width:125px;
+   width: 125px;
    border-top:7px solid rgba( 255, 255, 255, 0.4);
    border-bottom:7px solid rgba( 255, 255, 255, 0.4);
    display: flex;         
@@ -140,13 +126,13 @@ body{
 #tile4
 {
    height: 125px;
-   width:125px;
+   width: 125px;
    border:7px solid rgba( 255, 255, 255, 0.4);
    display: flex;         
    /* border-radius: 10px; */
    justify-content: center;
    align-items: center;
- cursor:pointer;
+ 
 }
 
 #grid
@@ -163,8 +149,6 @@ backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-cursor:pointer;
-margin :20px;
 }
 
  div button{
@@ -228,24 +212,34 @@ justify-content: center;
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
-@media (max-width: 320px){
-   #reset-btn
+@media (max-width: 720px){
+   .header1 h1
    {
-      height: 23px;
-  font-size: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+      font-size: 40px;
    }
-}
-@media (max-width: 320px){
+   .header2 span
+   {
+      font-size: 15px;
+      padding:5px 15px;
+      margin-left:15px;
+      margin-right:15px;
+   }
    #tile0,#tile1,#tile2,#tile3,#tile4,#tile5,#tile6,#tile7,#tile8
    {
       height: 60px;
       width: 60px;
    }
+   .container{
+      margin: 75px 0;
+   }
    #grid
+   {  font-size:50px;
+   }
+   #reset-btn
    {
-      font-size:50px;
+      height: 23px;
+      font-size: 10px;
+      padding:10px 25px;
    }
 
 }
