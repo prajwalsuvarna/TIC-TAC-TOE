@@ -9,22 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <script src="log.js">
-    </script>
+    <script src="log.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Tic-Tac-Toe</title>
 </head>
 
 <body>
+    <!-- BACKGROUND COLOR -->
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
+    <!-- MAIN CONTAINER -->
     <div class="container">
-
+        <!-- HEADING PART>>>>THETICTACTOE -->
         <div class="header1">
             <h1>TIC-TAC-TOE</h1>
         </div>
+        <!-- SCORES PART -->
         <div class="header2"><span id="playerX">X : -</span><span id="playerO">O : -</span></div>
+        <!-- DIV THAT CONTAINS THE GAME SHEET -->
         <div id="game">
             <div id="grid">
                 <div id="tile0" onclick="draw('tile0')"></div>
@@ -39,6 +42,7 @@
             </div>
         </div>
         <div id="reset">
+            <!-- RESET BUTTON -->
             <button id="reset-btn" onclick="reset()">Restart game</button>
         </div>
 

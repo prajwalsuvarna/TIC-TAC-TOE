@@ -2,6 +2,7 @@
 {
    margin:0px;
 }
+/* BACKGROUND COLOR OF THE BODY */
 body{
    height: 100vh;
 }
@@ -33,7 +34,7 @@ body{
      transform:translateX(25%);
    }
  }
-
+/* HEADING */
 .header1 h1
 { 
    
@@ -77,6 +78,7 @@ body{
    /* border: 2px solid red; */
    
 }
+/* div that contains the game block */
 #game
 {
    display: flex;
@@ -150,7 +152,7 @@ backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
+/* reset button */
  div button{
    margin-top: 20px;
    padding:10px 40px;
@@ -167,7 +169,7 @@ justify-content: center;
  }
 
 
-/* CSS */
+/* CSS for the reset button */
 #reset-btn {
   align-items: center;
   appearance: none;
@@ -212,6 +214,7 @@ justify-content: center;
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
+/* responsive design */
 @media (max-width: 720px){
    .header1 h1
    {
