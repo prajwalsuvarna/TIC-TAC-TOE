@@ -4,78 +4,49 @@
 }
 /* BACKGROUND COLOR OF THE BODY */
 body{
-   height: 100vh;
+   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+height: 100vh;
 }
-.bg {
-   animation:slide 3s ease-in-out infinite alternate;
-   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-   bottom:0;
-   left:-50%;
-   opacity:.5;
-   position:fixed;
-   right:-50%;
-   top:0;
-   z-index:-1;
- }
- 
- .bg2 {
-   animation-direction:alternate-reverse;
-   animation-duration:4s;
- }
- 
- .bg3 {
-   animation-duration:5s;
- }
- @keyframes slide {
-   0% {
-     transform:translateX(-25%);
-   }
-   100% {
-     transform:translateX(25%);
-   }
- }
+
 /* HEADING */
-.header1 h1
+header
 { 
-   
-   font-size: 100px;
-   padding:20px;
    display: flex;
-   margin:auto;
+   font-size: 2em;
+   padding:0.1em 0.1em;
+   margin: auto;
    justify-content: center;
    align-items: center;
-   /* border: 2px solid red; */
-   font-family: 'Permanent Marker', cursive;
+   font-family:  "Montserrat";
+
    
 }
-.header2
+.scores
 {
-   padding:10px;
+   padding:0.5em;
    display: flex;
    flex-direction: row;
    margin:auto;
    justify-content: center;
    align-items: center;
-   /* border: 2px solid red; */
    
 }
 
-.header2 span
+.scores span
 {
    background-color: aliceblue;
    box-shadow: 10px 5px 5px #0492c2;
-      border-radius: 10px;
-   font-size: 30px;
-   padding:5px 70px;
+   border-radius: 10px;
+   font-size: 2em;
+   padding:0em 1em;
    display: flex;
    flex-direction: row;
-   margin-left:75px;
-   margin-right:75px;
+   margin-left:5em;
+   margin-right:5em;
    justify-content: center;
    align-items: center;
    font-family: "Montserrat";
    cursor:pointer;
-   /* border: 2px solid red; */
    
 }
 /* div that contains the game block */
@@ -86,7 +57,6 @@ body{
    justify-content: center;
    margin: 40px;
    height: 50%;
-   /* border:2px solid blue; */
    flex-direction: column;
    font-family: "Montserrat";
    padding: 5px;
@@ -95,43 +65,40 @@ body{
 #tile0,#tile2,#tile6,#tile8
 {
    margin: auto;
-   height: 125px;
-   width: 125px;
+   height: 1.5em;
+   width: 1.5em;
    display: flex;         
-  
    justify-content: center;
    align-items: center;
    
 }
 #tile1,#tile7
 {
-   height: 125px;
-   width:125px;
+   height: 1.5em;
+   width: 1.5em;
    border-right:7px solid rgba( 255, 255, 255, 0.4);
    border-left:7px solid rgba( 255, 255, 255, 0.4);
    display: flex;         
-   /* border-radius: 10px; */
    justify-content: center;
    align-items: center;
 }
 #tile3,#tile5
 {
-   height: 125px;
-   width: 125px;
+   height: 1.5em;
+   width: 1.5em;
    border-top:7px solid rgba( 255, 255, 255, 0.4);
    border-bottom:7px solid rgba( 255, 255, 255, 0.4);
    display: flex;         
-   /* border-radius: 10px; */
    justify-content: center;
    align-items: center;
 }
 #tile4
 {
-   height: 125px;
-   width: 125px;
+   height: 1.5em;
+   width: 1.5em;
    border:7px solid rgba( 255, 255, 255, 0.4);
    display: flex;         
-   /* border-radius: 10px; */
+   
    justify-content: center;
    align-items: center;
  
@@ -139,10 +106,9 @@ body{
 
 #grid
 {
-   /* color:aliceblue; */
 display: grid;
 grid-template-columns: auto auto auto;
-font-size:80px;
+font-size:50px;
 border: 2px solid red;
 padding:5px;
 background: rgba( 255, 255, 255, 0.25 );
@@ -157,70 +123,27 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
    margin-top: 20px;
    padding:10px 40px;
    border-radius: 20px;
+   font-family: 'Hubballi', cursive;
+   background: radial-gradient(circle, rgba(174,193,238,1) 18%, rgba(148,233,209,1) 87%);
    
-
  }
  #reset
  { 
     display: flex;
 justify-content: center;
    align-items: center;
+   border: none;
    
  }
+ 
 
-
-/* CSS for the reset button */
-#reset-btn {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-  border: 0;
-  border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 22px;
-}
-
-#reset-btn:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-}
-
-#reset-btn:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-#reset-btn:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
-  transform: translateY(2px);
-}
 /* responsive design */
 @media (max-width: 720px){
-   .header1 h1
+   header
    {
-      font-size: 40px;
+      font-size: 1.5em;
    }
-   .header2 span
+   .scores span
    {
       font-size: 15px;
       padding:5px 15px;
@@ -232,20 +155,27 @@ justify-content: center;
       height: 60px;
       width: 60px;
    }
-   .container{
-      margin: 75px 0;
-   }
+  
    #grid
    {  font-size:50px;
    }
-   #reset-btn
-   {
-      height: 23px;
-      font-size: 10px;
-      padding:10px 25px;
-   }
+   div button{
+      margin-bottom: 5px;
+      padding:5px 5px;
+      border-radius: 10px;
+    }
 #game
 {
    margin:30px;
 }
+}
+@media (max-width: 1000px){
+    .scores span
+   {
+      font-size: 20px;
+      padding:5px 20px;
+      margin-left:30px;
+      margin-right:30px;
+   }
+
 }

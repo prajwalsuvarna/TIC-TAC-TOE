@@ -8,12 +8,12 @@ function draw(tilex)
    if(count==0)
     {
       count+=1        
-      x.innerHTML=`<span style="color:gray">X</span>`
+      x.innerHTML=`<span style="color:black">X</span>`
     }
    else if((count%2==0)&&(x.innerHTML==""))
     { 
       count+=1        
-      x.innerHTML=`<span style="color:gray">X</span>`
+      x.innerHTML=`<span style="color:black">X</span>`
         
 
         
@@ -21,7 +21,7 @@ function draw(tilex)
     else if((count%2!=0)&&(x.innerHTML!=`<span style="color:gray">X</span>`))
    {
     count+=1
-    x.innerHTML=`<span style="color:rgb(150, 150, 150)">O</span>`
+    x.innerHTML=`<span style="color:black">O</span>`
     
  
    }
