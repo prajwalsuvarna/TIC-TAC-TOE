@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    
+    <script src="log.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
     <title>Tic-Tac-Toe</title>
 </head>
 
 <body>
-
-
-    <!-- HEADING PART-->
-    <header>
-        <h2>TIC-TAC-TOE</h2>
-    </header>
-    <!-- SCORES PART -->
-    <section>
-        <div class="scores"><span id="playerX">X : -</span><span id="playerO">O : -</span></div>
+    <!-- BACKGROUND COLOR -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- HEADING PART>>>>THETICTACTOE -->
+        <div class="header1">
+            <h1>TIC-TAC-TOE</h1>
+        </div>
+        <!-- SCORES PART -->
+        <div class="header2"><span id="playerX">X : -</span><span id="playerO">O : -</span></div>
         <!-- DIV THAT CONTAINS THE GAME SHEET -->
         <div id="game">
             <div id="grid">
@@ -48,8 +45,8 @@
             <!-- RESET BUTTON -->
             <button id="reset-btn" onclick="reset()">Restart game</button>
         </div>
-    </section>
-    <script src="log.js"></script>
+
+    </div>
 </body>
 
 </html>
